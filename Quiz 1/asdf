@@ -1,0 +1,51 @@
+1. Java Virtual Machine(JVM) invokes the main( ) method in Java Program.
+2. Java Development Kit(JDK) Provides the complete environment to compile,debug and execute the code.
+3. Compiler is used to convert Java program to bytecode instead of machine code.
+4. Interpreter is used for reading high level byte code stream and execute the instructions line by line..
+5. JIT - Just In Time Compiler responsible for optimizing bytecode to machine code.
+6. Only C++ supports operator overloading, Only Java have inbuilt Thread support.
+7. C++ supports both call by value and call by reference and JAVA supports only call by value.
+8. C++ is not platform dependent as compiler in C++ generates machine code which is machine and platform dependent,on the other hand Java is 
+   platform dependent as compiler generates the byte code, which can be executed at any platform.
+9. Range for data type byte is -128 to 127 , When we increment variable ‘a’ twice , it crosses the positive range and goes into negative cyclic range.
+   Hence for anny data type in JAVA , once it reaches the end of its range then it automatically starts from the other ends value, beacause its a cyccle.
+10. The String array used in the main method is of length 0, hence accesing its member causes ArrayIndexOutOfBounds Exception
+11. && is a short circuit operator, which means that if the first condition is correct then it deos not check the second condition
+12. || operatort is a short cricuit operator as well, which means if the first condition is correct then it does not check the second condition.
+
+13. class GFG
+{
+    public static void main(String [] args) 
+    {
+        GFG s = new GFG();
+        s.start();
+    }
+
+    void start() 
+    {
+        int a = 3;
+        int b = 4;
+        System.out.print(" " + 7 + 2 + " ");
+        System.out.print(a + b);
+        System.out.print(" " + a + b + " ");
+        System.out.print(foo() + a + b + " ");
+        System.out.println(a + b + foo());
+    }
+
+    String foo() 
+    {
+        return "foo";
+    }
+}
+
+Output: 72 7 34 foo34 7foo
+Explanation : Because all of these expressions use the + operator, there is no precedence to worry 
+about and all of the expressions will be evaluated from left to right. If either operand being evaluated 
+is a String, the + operator will concatenate the two operands; if both operands are numeric, the + operator will add the two operands.
+
+
+14. The private access modifier limits access to members of the same class.
+15. Switch statements are based on integer expressions and since both bytes and chars can implicitly be widened to an integer, 
+    these can also be used. Also, short can be used, but Short cannot, as Short and Long are wrapper classes and reference types can not be used as variables.
+16. String st = null is a valid declaration of string.
+17. 
